@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evolutionary-assignment-optimizer"
+version = "0.1.0"
+description = "A reproducible genetic algorithm demo for constrained social event grouping"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Project maintainer"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "matplotlib>=3.7"]
+viz = ["matplotlib>=3.7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
